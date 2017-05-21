@@ -50,7 +50,7 @@ var socketio = require('socket.io')(server, {
   path: '/socket.io-client'
 });
 
-app.use(_express.static(__dirname + '/client'));
+
 app.use('/bower_components',  _express.static(__dirname + '/bower_components'));
 
 
