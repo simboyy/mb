@@ -51,9 +51,6 @@ var socketio = require('socket.io')(server, {
 });
 
 
-app.use('/bower_components',  _express.static(__dirname + '/bower_components'));
-
-
 // Start server
 function startServer() {
   app.angularFullstack = server.listen(process.env.PORT, function () {
